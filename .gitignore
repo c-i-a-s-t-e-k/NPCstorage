@@ -172,3 +172,16 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Frontend-specific ignores
+frontend/dist/
+frontend/.astro/
+frontend/node_modules/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+frontend/.env
+frontend/.env.production
+frontend/.DS_Store
+frontend/.idea/

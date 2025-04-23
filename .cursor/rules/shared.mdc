@@ -1,0 +1,53 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# AI Rules for NPCstorage
+
+{project-description}
+
+## Tech Stack
+
+- Astro 5
+- React 19
+- Tailwind 4
+- Python
+- FastAPI
+
+## Project Structure
+
+When introducing changes to the project, always follow the directory structure below:
+
+/NPCstorage
+  /frontend            # Astro/React frontend
+    /src
+      /components      # shadcn/ui and custom components
+      /pages           # Astro pages
+  /backend             # FastAPI backend
+    /app
+      /models          # SQLAlchemy models
+      /schemas         # Pydantic schemas
+      /api             # API routes
+      /core            # Core functionality
+      /services        # Business logic
+    main.py            # Entry point
+  /docker              # Docker configuration
+  .github/workflows    # GitHub Actions for CI/CD
+
+When modifying the directory structure, always update this section.
+
+## Coding practices
+
+### Guidelines for clean code
+
+- Use feedback from linters to improve the code when making changes.
+- Prioritize error handling and edge cases.
+- Handle errors and edge cases at the beginning of functions.
+- Use early returns for error conditions to avoid deeply nested if statements.
+- Place the happy path last in the function for improved readability.
+- Avoid unnecessary else statements; use if-return pattern instead.
+- Use guard clauses to handle preconditions and invalid states early.
+- Implement proper error logging and user-friendly error messages.
+- Consider using custom error types or error factories for consistent error handling.
+
